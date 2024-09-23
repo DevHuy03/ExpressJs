@@ -6,8 +6,6 @@ app.use(express.json());
 
 const PORT = process.env.PORT || 3000;
 
-const version = '1.0.0';
-
 const mockUsers =[
     {id: 1, username: "anson", displayName: "Anson" },
     {id: 2, username: "jack", displayName: "Jack" },
@@ -20,18 +18,6 @@ const mockUsers =[
 
 app.get("/", ( request , response ) =>{
     return response.send({ msg: "Hello Word!" });
-    // set response content    
-    // response.send(
-    //     `<html>
-    //         <body>
-    //             <h1 style="color:blue;text-align: center;margin-top: 100px;"> [Version ${version}]: This is AMAZING!!! Like & Subscribe!</h1>
-    //             <div style="position: fixed;top: 50%;left: 50%;transform: translate(-50%, -50%)">
-    //                 <img src="https://picsum.photos/400/400?random=1">
-    //             </div>
-    //         </body>
-    //     </html>`);
-
-    // console.log(`[Version ${version}]: New request => http://${hostname}:${port}`+req.url);
 });
 
 //http://localhost:3000/api/users
