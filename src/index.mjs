@@ -17,7 +17,7 @@ const mockUsers =[
 ];
 
 app.get("/", ( request , response ) =>{
-    return response.send({ msg: "Kiều Oanh là con gà ! hehe" });
+    return response.send({ msg: "Như Bình là con gà ! hehe" });
 });
 
 //http://localhost:3000/api/users
